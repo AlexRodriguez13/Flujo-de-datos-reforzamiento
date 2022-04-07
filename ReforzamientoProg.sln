@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flujo De Datos", "Fliujo De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{383C235C-991D-4E13-BACE-E67A37238AFA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datos", "Datos", "{ED0F7825-7113-4D89-8E77-D7370EEC7B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormFlujo", "FormFlujo\FormFlujo.csproj", "{BC63124E-3F40-4D34-B228-86676283F9DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{383C235C-991D-4E13-BACE-E67A37238AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{383C235C-991D-4E13-BACE-E67A37238AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{383C235C-991D-4E13-BACE-E67A37238AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC63124E-3F40-4D34-B228-86676283F9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC63124E-3F40-4D34-B228-86676283F9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC63124E-3F40-4D34-B228-86676283F9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC63124E-3F40-4D34-B228-86676283F9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC63124E-3F40-4D34-B228-86676283F9DC} = {ED0F7825-7113-4D89-8E77-D7370EEC7B3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83E02A6F-6BCF-4B7D-8A8C-5B8104A13E61}

@@ -18,7 +18,7 @@ namespace Model
         public int Edad1 { get => Edad; set => Edad = value; }
         public string Cedula1 { get => Cedula; set => Cedula = value; }
 
-        Persona[] GrupoPersona =
+         public static  Persona[] GrupoPersona =
         {
             new Persona(){Nombre= "Alex", Apellido = "Rodriguez", Edad = 18, Cedula="0011313131033i" },
             new Persona(){Nombre= "Dara", Apellido = "Garcia", Edad = 18, Cedula="0011313131033i" },
@@ -27,6 +27,10 @@ namespace Model
             new Persona(){Nombre= "Juan", Apellido = "Morales", Edad = 18, Cedula="0011313131033i" }
         };
 
+        public static Persona[] GetPersonas()
+        {
+            return GrupoPersona;
+        }
 
 
     }

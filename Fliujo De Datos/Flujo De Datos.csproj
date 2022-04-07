@@ -6,4 +6,8 @@
     <RootNamespace>Fliujo_De_Datos</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
 </Project>

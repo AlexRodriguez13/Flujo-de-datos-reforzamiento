@@ -1,28 +1,45 @@
 ﻿using System;
 using System.IO;
+using Model;
 namespace Flujo_De_Datos
+
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            using (FileStream fileStream = new FileStream("Prueba.txt", FileMode.Create, FileAccess.ReadWrite))
-            {
-                using (StreamWriter streamWriter= new StreamWriter(fileStream))
-                {
-                    streamWriter.WriteLine("Hello everyone I'm Dickson");
-                    streamWriter.Write("Omg you are gay");
 
-                }
+            Persona[] GrupoPersona = Persona.GetPersonas();
+
+            //using (FileStream fileStream = new FileStream("Prueba.txt", FileMode.Create, FileAccess.ReadWrite))
+            //{
+            //    using (StreamWriter streamWriter = new StreamWriter(fileStream))
+            //    {
+            //        foreach (Persona persona in GrupoPersona)
+            //        {
+            //            streamWriter.Write(persona.Nombre1);
+            //            streamWriter.Write(persona.Apellido1);
+            //            streamWriter.Write(persona.Edad1);
+            //            streamWriter.Write(persona.Cedula1);
+            //        }
+
+            //    }
 
                 using (FileStream fs = new FileStream("Prueba.txt", FileMode.Open, FileAccess.ReadWrite))
                 {
                     using (StreamReader sr = new StreamReader(fs))
                     {
-                        Console.WriteLine(sr.ReadToEnd());
 
+                    string linea;
 
-                        sr.ReadToEnd();
+                    while ((linea= sr.ReadLine())  != null)
+                    {
+                        if (linea.Contains("A"))
+                        {
+                            Console.WriteLine(linea);
+                        }
+                    }
+                   
                     }
                 }
 
@@ -40,4 +57,6 @@ namespace Flujo_De_Datos
             //Console.WriteLine("Hello World!");
         }
     }
-}
+
+
+
